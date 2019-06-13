@@ -70,8 +70,22 @@
 				
 				 <ul id="nav" >
 				 
-					 <li><a href="https://www.facebook.com/hsingdarren">The Founder</a></li>
-					 <li><a href="https://www.facebook.com/arjun.sampath333">The Founder</a></li>					 
+					 <li><a href="#">The Founders</a></li>
+					<!-- jQuery -->
+					<script type="text/javascript" src="your-jquery-src-here"></script>
+					<script type="text/javascript">
+						$(document).ready(function () {
+							function openMultiple() {
+								for (var i = 0, len = arguments.length; i < len; i++) {
+									window.open(arguments[i]);
+								}
+							}
+							
+							$(".test-merge").click(function () {
+								openMultiple("https://www.facebook.com/arjun.sampath333", "https://www.facebook.com/hsingdarren")
+							});
+						})
+					</script>
 					
 					 
 				 </ul>
